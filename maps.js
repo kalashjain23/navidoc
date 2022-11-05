@@ -1,5 +1,5 @@
 /* Function to get your location */
-function geoFindMe() {
+function geoFindMe(speciality) {
 
     const status = document.querySelector('#status');
     const mapLink = document.querySelector('#map-link');
@@ -12,7 +12,7 @@ function geoFindMe() {
       const longitude = position.coords.longitude;
   
       status.textContent = '';
-      mapLink.href = `https://www.google.com/maps/search/doctors/@${latitude},${longitude},14z`;
+      mapLink.href = `https://www.google.com/maps/search/${speciality}/@${latitude},${longitude},14z`;
       mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
     }
   

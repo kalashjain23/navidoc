@@ -3,6 +3,38 @@ const TOKEN = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImthbGFzaGphaW4x
 let symptoms;
 let dictionary = [];
 let options = [];
+let diseases = [];
+let chances = [];
+let specialist = [];
+
+function geoFindMe(speciality) {
+
+    const status = document.querySelector('#status');
+    const mapLink = document.querySelector('#map-link');
+  
+    mapLink.href = '';
+    mapLink.textContent = '';
+  
+    function success(position) {
+      const latitude  = position.coords.latitude;
+      const longitude = position.coords.longitude;
+  
+      status.textContent = '';
+      mapLink.href = `https://www.google.com/maps/search/${speciality}/@${latitude},${longitude},14z`;
+      mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+    }
+  
+    function error() {
+      status.textContent = 'Unable to retrieve your location';
+    }
+  
+    if (!navigator.geolocation) {
+      status.textContent = 'Geolocation is not supported by your browser';
+    } else {
+      status.textContent = 'Locating…';
+      navigator.geolocation.getCurrentPosition(success, error);
+    }
+}
 
 function get(){
     let choices = document.getElementById('dropdown').selectedOptions;
@@ -20,6 +52,7 @@ function get(){
             dictionary[symptoms[i].Name] = symptoms[i].ID;
             options.push(symptoms[i].Name);
         }
+        console.log(options);
 
         for(let i = 0; i < values.length; i++){
             symp_para.push(dictionary[values[i]])
@@ -28,6 +61,28 @@ function get(){
 
         diagnose(JSON.stringify(symp_para), gender, age).then((data) => {
             console.log(data);
+            for(let i = 0; i < data.length; i++){
+                diseases.push(data[i].Issue.Name);
+                chances.push(data[i].Issue.Accuracy);
+                let gp = false;
+                for(let j = 0; j < data[i].Specialisation.length; j++){
+                    if(data[i].Specialisation[j].Name != "General practice" &&
+                        data[i].Specialisation[j].Name != "Internal medicine")
+                        {
+                            specialist.push(data[i].Specialisation[j].Name);
+                            break;
+                        }
+                    else if(j == data[i].Specialisation.length - 1){
+                        specialist.push("General practice");
+                    }
+                }
+            }           
+            console.log(diseases);
+            console.log(chances);
+            console.log(specialist);
+            for(let i = 0; i < specialist.length; i++){
+                document.querySelector('#find-me').addEventListener('click', geoFindMe(specialist[i]));
+            }
         })        
     })
 }
