@@ -13,7 +13,7 @@ function geoFindMe(speciality) {
   
       status.textContent = '';
       mapLink.href = `https://www.google.com/maps/search/${speciality}/@${latitude},${longitude},14z`;
-      mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+      mapLink.textContent = `Relevant hospitals near you`;
     }
   
     function error() {
