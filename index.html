@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <body>
+  <body>
+    <form>
+      <input type="text" id="gender" placeholder="gender" />
+      <input type="text" id="age" placeholder="age" />
+      <input type="button" id="myButton" value="Submit" onclick="get()" />
+    </form>
 
-        <form>
-            <input type = "text" id = "gender" placeholder = "gender">
-            <input type = "text" id = "age" placeholder = "age">
-            <input type = "button" id = "myButton" value = "Submit" onclick = get()>
-        </form>
+    <!-- Get your location with this button -->
+    <button id="find-me">Show my location</button><br />
+    <p id="status"></p>
+    <a id="map-link" target="_blank"></a>
 
-        <!-- Get your location with this button -->
-        <button id="find-me">Show my location</button><br />
-        <p id="status"></p>
-        <a id="map-link" target="_blank"></a>
-        
-        <select multiple id = 'dropdown'
-            multiselect-search="true" 
-            multiselect-select-all="true" 
-            multiselect-max-items="3"
-            multiselect-hide-x = "false"> 
-            <option>Chest pain</option>
-            <option>Abdominal pain</option>
-            <option>Anxiety</option>
-            <option>Back pain</option>
-            <option>Cheek swelling</option>
-        </select>
+    <select
+      multiple
+      id="dropdown"
+      multiselect-search="true"
+      multiselect-select-all="true"
+      multiselect-max-items="3"
+      multiselect-hide-x="false"
+    >
+      <option>Abdominal pain</option>
+      <option>Anxiety</option>
+      <option>Back pain</option>
+      <option>Burning eyes</option>
+      <option>Burning in the throat</option>
+      <option>Chest pain</option>
+      <option>Cold sweats</option>
+      <option>Cheek swelling</option>
+      <option>Cough</option>
+      <option>Dizziness</option>
+      <option>Earache</option>
+      <option>Eye pain</option>
+      <option>Eye redness</option>
+      <option>Fever</option>
+      <option>Headache</option>
+      <option>Itching eyes</option>
+      <option>Lip swelling</option>
+      <option>Nausea</option>
+      <option>Paralysis</option>
+      <option>Runny nose</option>
+      <option>Sleeplessness</option>
+      <option>Sore throat</option>
+      <option>Sweating</option>
+      <option>Vomiting</option>
+      <option>weakness</option>
+    </select>
 
-        <script src = "./script.js"></script>        
-        <script src = "./maps.js"></script>
-        <script src="./mutipleselect-dropdown.js" ></script>
-
-    </body>
+    <script src="./script.js"></script>
+    <script src="./maps.js"></script>
+    <script src="./mutipleselect-dropdown.js"></script>
+  </body>
 </html>
