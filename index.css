@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(
+      242.84deg,
+      rgba(215, 237, 240, 0.052) 0%,
+      rgba(74, 176, 190, 0.03) 50.33%,
+      rgba(37, 208, 232, 0.2) 99.62%
+    ),
+    #fbfffc;
+}
+.main {
+  height: 100vh;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  align-items: center;
+}
+
+.nav-items ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 22px;
+}
+
+.nav-items ul li a {
+  text-decoration: none;
+  color: #2d2c1f;
+  font-weight: 600;
+}
+
+.nav-items ul :nth-child(2),
+.nav-items ul :nth-child(3),
+.nav-items ul :nth-child(4) {
+  margin-left: 40px;
+}
+
+.login-btn {
+  background-color: #1aadc1;
+  /* color: white; */
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 22px;
+  width: 65px;
+  border-radius: 18px;
+  border: none;
+}
+
+.hero {
+  display: flex;
+  padding: 0 40px;
+}
+
+.hero-text {
+  /* width: 60%; */
+
+  margin-top: 100px;
+}
+
+.main-heading {
+  color: #2d2c1f;
+  font-size: 30px;
+  /* width: 70%; */
+}
+
+.main-heading h1 span {
+  color: #1aadc1;
+}
+
+.main-para {
+  color: #2d2c1f;
+  font-size: 20px;
+  font-weight: 400;
+  width: 80%;
+  margin-top: 30px;
+  text-align: justify;
+}
+
+.illustration img {
+  width: 800px;
+  align-self: flex-end;
+}
+
+.logins-btns {
+  margin-top: 18px;
+}
+.logins-btns button {
+  padding: 5px 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 18px;
+  width: 110px;
+}
+
+.logins-btns .login {
+  background-color: #1aadc1;
+}
+
+.logins-btns .register {
+  color: #023239;
+  background-color: transparent;
+}
+
+.learnmore {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.details-section {
+  margin: 0 40px;
+}
+
+.details-section > h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.input-elements {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.input-elements > div {
+  font-size: 20px;
+}
+
+.input-elements > div > input {
+  width: 300px;
+  border: none;
+  border: 1px solid #023239;
+  font-size: 20px;
+  border-radius: 3px;
+  background-color: transparent;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.dropdown-menu {
+  width: 300px;
+}
