@@ -9,7 +9,7 @@ let chances = []
 let specialist = []
 
 function geoFindMe(speciality) {
-  console.log(speciality);
+  console.log(speciality)
   const status = document.querySelector("#status")
   const mapLink = document.querySelector("#map-link")
   mapLink.href = ""
@@ -84,7 +84,7 @@ function get() {
                 <div class="card">
                     <h1>You have ${chances[i]}% chance of having ${diseases[i]} </h1>
                     <p>Specialist: You should consult the doctor having speciality in ${specialist[i]}</p>
-                    <button id="find-me" class="btn" onclick = "https://www.google.com/maps/search/Psychiatry/@28.7033494,77.1401982,14z">Find a doctor</button>
+                    <button id="find-me" class="btn"> <a href = "https://www.google.com/maps/search/Psychiatry/@28.7033494,77.1401982,14z"> Find a doctor </a></button>
                 </div>
                     `
         cards.push(template)

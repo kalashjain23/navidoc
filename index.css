@@ -245,3 +245,8 @@ input[type="button"] {
   background-color: #85d4df;
   cursor: pointer;
 }
+
+.btn a {
+  color: black;
+  text-decoration: none;
+}
