@@ -61,11 +61,11 @@
         <div>Name: <input type="text" placeholder="Name" /></div>
         <div>
           Gender:
-          <input type="text" placeholder="Name" />
+          <input type="text" id="gender" placeholder="Gender" />
         </div>
         <div>
           Age:
-          <input type="number" placeholder="Name" />
+          <input type="number" id="age" placeholder="Age" />
         </div>
       </div>
       <div class="dropdown-menu">
@@ -105,8 +105,10 @@
         </select>
       </div>
 
-      <input type="button" id="myButton" value="Submit" />
+      <input type="button" id="myButton" value="Submit" onclick="get()" />
     </section>
+    <script src="./script.js"></script>
+    <!-- <script src="./maps.js"></script> -->
     <script src="./mutipleselect-dropdown.js"></script>
   </body>
 </html>
