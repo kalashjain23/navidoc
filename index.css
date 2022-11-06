@@ -10,6 +10,7 @@ body {
       rgba(37, 208, 232, 0.2) 99.62%
     ),
     #fbfffc;
+  font-family: "Poppins", sans-serif;
 }
 .main {
   height: 100vh;
@@ -84,7 +85,7 @@ body {
 }
 
 .illustration img {
-  width: 800px;
+  width: 700px;
   align-self: flex-end;
 }
 
@@ -113,6 +114,8 @@ body {
   margin-top: 30px;
   font-size: 20px;
   cursor: pointer;
+  font-weight: 300;
+  color: #128594;
 }
 
 .details-section {
@@ -186,6 +189,11 @@ input[type="button"] {
 .details-section {
   margin-top: 100px;
   height: 50vh;
+}
+
+.details-section > h1 {
+  font-size: 40px;
+  margin-bottom: 25px;
 }
 
 .cards {
