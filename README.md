@@ -1,13 +1,10 @@
 # NaviDoc
 ![image](https://user-images.githubusercontent.com/97169623/200155396-d97a6621-89c9-4438-8bae-fde059fa50fe.png)
 
-
 ## Team Name: _NoTeXe_
 
-## Category: Health Care
-
 ## Problem Statement
-
+***Category: Health Care***  
 There are moments when people are **_confused_** about whether the symptoms they are suffering from are _severe_ or not. This confusion can lead to the worsening of their mental as well as physical health and it needs to be resolved before anything severe happens to them!!
 
 ## Solution
