@@ -80,6 +80,30 @@ function get() {
       console.log(diseases)
       console.log(chances)
       console.log(specialist)
+
+      const disease = document.getElementById("disease")
+      const accuracy = document.getElementById("accuracy")
+      const doctor = document.getElementById("doctor")
+
+      const cardsContainer = document.getElementById("cards")
+      const cards = []
+
+      for (let i = 0; i < diseases.length; i++) {
+        const card = document.createElement("div")
+        card.classList.add("card")
+        card.innerHTML = `
+                <div class="card-body">
+                    <h1>You have ${chances[i]}% chance of having${disease[i]} </h1> 
+                    <p>Specialist: You should consult the doctor having speciality in ${specialist[i]}</p>
+                    `
+        cards.push(card)
+      }
+      console.log(cards)
+
+      //   cardsContainer.innerHTML = cards
+
+      //   console.log(disease.textContent)
+
       // for(let i = 0; i < specialist.length; i++){
       //     document.querySelector('#find-me').addEventListener('click', geoFindMe(specialist[i]));
       // }
