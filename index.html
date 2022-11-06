@@ -57,59 +57,61 @@
 
     <section class="details-section">
       <h1>Enter your Details</h1>
-      <div class="input-elements">
-        <div>Name: <input type="text" placeholder="Name" /></div>
-        <div>
-          Gender:
-          <input type="text" id="gender" placeholder="Gender" />
+      <form id="form">
+        <div class="input-elements">
+          <div>Name: <input type="text" placeholder="Name" /></div>
+          <div>
+            Gender:
+            <input type="text" id="gender" placeholder="Gender" />
+          </div>
+          <div>
+            Age:
+            <input type="number" id="age" placeholder="Age" />
+          </div>
         </div>
-        <div>
-          Age:
-          <input type="number" id="age" placeholder="Age" />
+        <div class="dropdown-menu">
+          <select
+            multiple
+            id="dropdown"
+            multiselect-search="true"
+            multiselect-select-all="true"
+            multiselect-max-items="3"
+            multiselect-hide-x="false"
+          >
+            <option>Abdominal pain</option>
+            <option>Anxiety</option>
+            <option>Back pain</option>
+            <option>Burning eyes</option>
+            <option>Burning in the throat</option>
+            <option>Chest pain</option>
+            <option>Cold sweats</option>
+            <option>Cheek swelling</option>
+            <option>Cough</option>
+            <option>Dizziness</option>
+            <option>Earache</option>
+            <option>Eye pain</option>
+            <option>Eye redness</option>
+            <option>Fever</option>
+            <option>Headache</option>
+            <option>Itching eyes</option>
+            <option>Lip swelling</option>
+            <option>Nausea</option>
+            <option>Paralysis</option>
+            <option>Runny nose</option>
+            <option>Sleeplessness</option>
+            <option>Sore throat</option>
+            <option>Sweating</option>
+            <option>Vomiting</option>
+            <option>weakness</option>
+          </select>
         </div>
-      </div>
-      <div class="dropdown-menu">
-        <select
-          multiple
-          id="dropdown"
-          multiselect-search="true"
-          multiselect-select-all="true"
-          multiselect-max-items="3"
-          multiselect-hide-x="false"
-        >
-          <option>Abdominal pain</option>
-          <option>Anxiety</option>
-          <option>Back pain</option>
-          <option>Burning eyes</option>
-          <option>Burning in the throat</option>
-          <option>Chest pain</option>
-          <option>Cold sweats</option>
-          <option>Cheek swelling</option>
-          <option>Cough</option>
-          <option>Dizziness</option>
-          <option>Earache</option>
-          <option>Eye pain</option>
-          <option>Eye redness</option>
-          <option>Fever</option>
-          <option>Headache</option>
-          <option>Itching eyes</option>
-          <option>Lip swelling</option>
-          <option>Nausea</option>
-          <option>Paralysis</option>
-          <option>Runny nose</option>
-          <option>Sleeplessness</option>
-          <option>Sore throat</option>
-          <option>Sweating</option>
-          <option>Vomiting</option>
-          <option>weakness</option>
-        </select>
-      </div>
+      </form>
 
       <input type="button" id="myButton" value="Submit" onclick="get()" />
     </section>
 
     <section class="cards">
-      <h1>Probable Results</h1>
+      <h1 id="probable-results"></h1>
       <div class="cards-containers" id="cards"></div>
     </section>
     <script src="./script.js"></script>

@@ -55,7 +55,7 @@ body {
 
 .hero {
   display: flex;
-  padding: 0 40px;
+  padding: 0 80px;
 }
 
 .hero-text {
@@ -89,7 +89,7 @@ body {
 }
 
 .logins-btns {
-  margin-top: 18px;
+  margin-top: 25px;
 }
 .logins-btns button {
   padding: 5px 10px;
@@ -97,6 +97,7 @@ body {
   border: none;
   border-radius: 18px;
   width: 110px;
+  cursor: pointer;
 }
 
 .logins-btns .login {
@@ -109,8 +110,9 @@ body {
 }
 
 .learnmore {
-  margin-top: 15px;
+  margin-top: 30px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .details-section {
@@ -178,6 +180,12 @@ input[type="button"] {
   display: block;
   margin: auto;
   margin-top: 20px;
+  cursor: pointer;
+}
+
+.details-section {
+  margin-top: 100px;
+  height: 50vh;
 }
 
 .cards {
@@ -216,4 +224,5 @@ input[type="button"] {
   border: none;
   border: 1px solid black;
   background-color: #85d4df;
+  cursor: pointer;
 }

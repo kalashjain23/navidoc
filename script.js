@@ -46,21 +46,17 @@ function get() {
 
   call().then((data) => {
     symptoms = data
-    console.log(symptoms)
 
     for (let i = 0; i < 60; i++) {
       dictionary[symptoms[i].Name] = symptoms[i].ID
       options.push(symptoms[i].Name)
     }
-    console.log(options)
 
     for (let i = 0; i < values.length; i++) {
       symp_para.push(dictionary[values[i]])
     }
-    console.log(symp_para)
 
     diagnose(JSON.stringify(symp_para), gender, age).then((data) => {
-      console.log(data)
       for (let i = 0; i < data.length; i++) {
         diseases.push(data[i].Issue.Name)
         chances.push(data[i].Issue.Accuracy)
@@ -77,13 +73,6 @@ function get() {
           }
         }
       }
-      console.log(diseases)
-      console.log(chances)
-      console.log(specialist)
-
-      //   const disease = document.getElementById("disease")
-      //   const accuracy = document.getElementById("accuracy")
-      //   const doctor = document.getElementById("doctor")
 
       const cardsContainer = document.getElementById("cards")
       let cards = []
@@ -102,9 +91,24 @@ function get() {
       }
       const allCards = cards.join("")
       cardsContainer.innerHTML = allCards
+
+      const probableHeading = document.getElementById("probable-results")
+
+      probableHeading.textContent = "Loading..."
+
+      if (cards.innerHTML != "") {
+        probableHeading.textContent = "This is what we have"
+      }
     })
+    const form = document.getElementById("form")
+    form.reset()
+    diseases = []
+    chances = []
+    specialist = []
   })
 }
+
+const cards = document.getElementById("cards")
 
 async function call() {
   return fetch(
