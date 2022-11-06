@@ -31,3 +31,9 @@ _JavaScript, HTML, CSS, Figma and REST APIs_
 - **_Preet Sojitra_** (Socials: [GitHub](https://github.com/Preet-Sojitra), [Linkedin](https://www.linkedin.com/in/preet-sojitra/))
 - **_Hrishikesh Kalola_** (Socials: [GitHub](https://github.com/hrishi-008), [Linkedin](https://www.linkedin.com/in/hrishk/))
 - **_Manan Gupta_** (Socials: [GitHub](https://github.com/manan152003), [Linkedin](https://www.linkedin.com/in/manan152003/))
+
+## ScreenShots:
+![image](https://user-images.githubusercontent.com/87543808/200156381-cf05a4d5-e831-4924-aac0-5d96f297aa6e.png)
+![image](https://user-images.githubusercontent.com/87543808/200156442-f5ca1e0a-78fc-4e45-ae40-9611675400eb.png)
+
+
