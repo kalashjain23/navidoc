@@ -191,6 +191,7 @@ input[type="button"] {
 .cards-containers {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
   margin-top: 25px;
 }
@@ -198,6 +199,21 @@ input[type="button"] {
 .card {
   background-color: #c6e7ec;
   /* margin-top: 10px; */
-  /* max-width: 50%; */
+  width: 40%;
   padding: 20px 30px;
+}
+
+.card p {
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+.btn {
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: none;
+  border: 1px solid black;
+  background-color: #85d4df;
 }
