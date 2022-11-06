@@ -12,15 +12,6 @@ const configureClient = async () => {
     });
   };
 
-window.onload = async () => {
-await configureClient();
-}
-
-window.onload = async () => {
-    await configureClient();
-    // NEW - update the UI state
-    updateUI();
-};  
   // NEW
 
   const updateUI = async () => { 
@@ -55,8 +46,8 @@ const login = async () => {
 };
 
 auth0.createAuth0Client({
-    domain: "dev-y8zpvfvhubqqy1ee.us.auth0.com",
-    clientId: "YLIXAtDWPrNY7DFJO4rBAhL0pSkJRFcM",
+    domain: "dev-sr6216xloh8g8wj7.us.auth0.com",
+    clientId: "q4ygEKOS2cN09I4hQ4mLJYK0PIcuJ3Yp",
     authorizationParams: {
       redirect_uri: window.location.origin
     }
@@ -101,7 +92,9 @@ auth0.createAuth0Client({
     }
 });
 
+
 window.onload = async () => {
+    await configureClient();
 
     // .. code ommited for brevity
   
