@@ -24,6 +24,17 @@ body {
   align-items: center;
 }
 
+.logo {
+  position: relative;
+}
+
+.logo img {
+  position: absolute;
+  width: 140px;
+  left: 43px;
+  top: -40px;
+}
+
 .nav-items ul {
   display: flex;
   justify-content: space-between;
