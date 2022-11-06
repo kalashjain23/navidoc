@@ -2,7 +2,7 @@
 
 ## Team Name: _NoTeXe_
 
-## Category: Health Sector
+## Category: Health Care
 
 ## Problem Statement
 
