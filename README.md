@@ -6,14 +6,13 @@
 
 ## Problem Statement
 
-There are moments when people are **_confused_** whether the symptoms they are suffering through are _severe_ or not. This confusion can lead to worsening of their health
-and it needs to be resolved before anything severe happens to them!!
+There are moments when people are **_confused_** about whether the symptoms they are suffering from are _severe_ or not. This confusion can lead to the worsening of their health and it needs to be resolved before anything severe happens to them!!
 
 ## Solution
 
 Therefore, we are here with a platform that can help in getting the probable diseases that you might be suffering with the help of your symptoms and some other parameters.  
 NaviDoc will also inform you about what kind of doctors you should be visiting when you are going through some particular diseases. Not only that but, it will also help
-you in navigating you to your _closest doctor with the appropriate speciality_.
+you in navigating you to your _closest doctor with the appropriate specialty.
 
 ### Tech Stack
 
