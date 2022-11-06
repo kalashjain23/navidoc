@@ -34,6 +34,7 @@ _JavaScript, HTML, CSS, Figma and REST APIs_
 
 ## ScreenShots:
 ![image](https://user-images.githubusercontent.com/87543808/200156381-cf05a4d5-e831-4924-aac0-5d96f297aa6e.png)
-![image](https://user-images.githubusercontent.com/87543808/200156442-f5ca1e0a-78fc-4e45-ae40-9611675400eb.png)
+![image](https://user-images.githubusercontent.com/87543808/200156580-563f0e1f-2305-4d58-9243-0e9e7eec3a0c.png)
+
 
 
