@@ -1,4 +1,6 @@
 # NaviDoc
+![image](https://user-images.githubusercontent.com/97169623/200155396-d97a6621-89c9-4438-8bae-fde059fa50fe.png)
+
 
 ## Team Name: _NoTeXe_
 
